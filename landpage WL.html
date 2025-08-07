@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Landing Page Simples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 80px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    p {
+      color: #555;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007BFF;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .info {
+      margin-top: 20px;
+      display: none;
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="/Users/joaoi/Documents/Landpage/titulo.jpg" alt="Imagem">
+
+    <h1>Você foi selecionado para o grupo Lista de Espera</h1>
+
+    <p><strong>Grupo Controle (Lista de Espera)</strong> Neste momento, você não receberá intervenção imediata, mas participará normalmente de todas as avaliações da pesquisa.</p>
+
+    <p>Em dois meses, você poderá escolher entre iniciar as atividades do grupo TEED (online) ou PEED (presencial).</p>
+
+    <p>
+      <strong>A Dra. Dayane Ribeiro</strong> entrará em contato com você pelo número:<br>
+      📞 <strong>(31) 9 7124-1399</strong>
+    </p>
+
+    <p>Em breve você receberá todas as instruções para iniciar sua participação.</p>
+
+    <p><strong>Agradecemos sua colaboração!</strong></p>
+
+    <button onclick="mostrarInfo()">Quero saber mais</button>
+
+    <div id="maisInfo" class="info">
+      Aqui está a informação secreta: use o cupom <code>DESCONTO10</code> para 10% OFF!
+    </div>
+  </div>
+
+  <script>
+    function mostrarInfo() {
+      document.getElementById("maisInfo").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
